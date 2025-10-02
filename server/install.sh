@@ -7,7 +7,7 @@ cargo add serde --features "derive"
 cargo add serde_json
 cargo add chrono --features "serde"
 cargo add uuid --features "v4,serde"
-cargo add jsonwebtoken
+cargo add jsonwebtoken@10.0 --features "aws_lc_rs"
 cargo add argon2
 cargo add rand
 cargo add sha2
@@ -21,7 +21,7 @@ cargo add tracing-subscriber --features "env-filter"
 cargo add anyhow
 cargo add thiserror
 cargo add validator --features "derive"
-cargo add lettre --features "tokio1-rustls-tls"
+cargo add lettre --features "tokio1-rustls-tls" --no-default-features
 cargo add mime
 cargo add mime_guess
 cargo add governor
